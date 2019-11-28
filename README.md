@@ -1,7 +1,6 @@
 # coursesio
 ## Este projeto foi desenvolvido enquanto eu fazia parte da Startup de tecnologia para área da saúde **Zhealth Blockchain**. O propósito do desenvolvimento desse projeto foi melhorar minhas habilidades como programador utilizando as tecnlogias AdonisJS e MaterialUI
 ### A regra de negócio diz que um adm poderá se cadastrar, visualizar os usuários e informações sobre os cursos que ele criará. O usuário poderá se cadastrar no sistema, vincular-se à um curso e visualizar os outros integrantes desse curso.
-<br>
 #### As rotas para consumo do software insonmia está nesse diretório e as rotas para consumo serão
   * ##### /users - POST **
     - (O sistema se inicia com o adm já cadastrado). Essa rota possibilitará o auto cadastro de um usuário
