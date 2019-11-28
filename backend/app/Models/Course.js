@@ -5,7 +5,7 @@ const Model = use("Model");
 
 class Course extends Model {
   users() {
-    this.belongsToMany("App/Models/User").pivotTable("user_course");
+    return this.belongsToMany("App/Models/User").pivotTable("user_course");
   }
 }
 

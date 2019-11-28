@@ -11,6 +11,7 @@ class CourseController {
     if (auth.user.profile === 1) {
       const courses = await Course.query()
         .select("id", "name", "description", "created_at")
+        .withCount("users as qtd_users")
         .fetch();
 
       return courses;
@@ -51,6 +52,8 @@ class CourseController {
       course = await Course.query()
         .where({ id })
         .select("id", "name", "description", "created_at")
+        .with("users")
+        .withCount("users as qtd_users")
         .first();
       return course;
     }
@@ -59,6 +62,8 @@ class CourseController {
     course = await Course.query()
       .where({ id })
       .select("id", "name", "description")
+      .with("users")
+      .withCount("users as qtd_users")
       .first();
 
     return course;

@@ -32,27 +32,3 @@ Route.group(() => {
   Route.post("subscription/courses/:id", "SubscriptionController.store");
   Route.delete("subscription/courses/:id", "SubscriptionController.destroy");
 }).middleware("auth");
-
-// Fazer um get de todos os user trazendo apenas sua row na database OK
-// Mostrando à quantos cursos ele está vinculado
-
-// Fazer um get de um único user trasendo apenas sua linha na database OK
-// Mostrando à quais cursos ele está vinculado
-
-// Fazer um update de um user OK
-
-// Fazer um delete de um user OK
-
-// Fazer o store de um curso, caso o user seja o adm OK
-
-// Fazer um index de cursos trazendo apenas sua row OK
-// Mostrar quantos usuários estão viculados à esse curso
-
-// Fazer um get de um curso trazendo apenas sua row OK
-// Trazer todos os usuários que estão vinculados à ele
-
-// Fazer um update de um curso OK
-
-// Fazer um delete de um curso OK
-
-// Fazer a rota que liga um user à um curso OK

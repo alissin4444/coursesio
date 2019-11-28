@@ -8,7 +8,8 @@ class UserController {
     if (auth.user.profile === 1) {
       const users = await User.query()
         .where("profile", "!=", 1)
-        .select("id", "name")
+        .select("id", "name", "created_at")
+        .withCount("courses as qtd_courses")
         .fetch();
 
       return users;
@@ -30,7 +31,9 @@ class UserController {
     if (auth.user.profile === 1) {
       const user = await User.query()
         .where({ id, profile: 2 })
-        .select("id", "name")
+        .select("id", "name", "created_at")
+        .withCount("courses as qtd_courses")
+        .with("courses")
         .first();
 
       return user;
