@@ -1,5 +1,5 @@
 # coursesio
-## Este projeto foi desenvolvido enquanto eu fazia parte da Startup de tecnologia para área da saúde **Zhealth Blockchain**. O propósito do desenvolvimento desse projeto foi melhorar minhas habilidades como programador backend utilizando as tecnlogias AdonisJS e MaterialUI
+## Este projeto foi desenvolvido enquanto eu fazia parte da Startup de tecnologia para área da saúde **Zhealth Blockchain**. O propósito do desenvolvimento desse projeto foi melhorar minhas habilidades como programador utilizando as tecnlogias AdonisJS e MaterialUI
 ### A regra de negócio diz que um adm poderá se cadastrar, visualizar os usuários e informações sobre os cursos que ele criará. O usuário poderá se cadastrar no sistema, vincular-se à um curso e visualizar os outros integrantes desse curso.
 ### Para rodar a aplicação, baixe o backend e front end, execute o comando "npm install" dentro da root de cada um dos dois projetos e posteriormente à isso poderá startar o servidor através do comando "adonis serve --dev" no backend e "yarn start" no front end.
 #### As rotas para consumo do software insonmia está nesse diretório e as rotas para consumo serão
